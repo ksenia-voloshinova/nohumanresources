@@ -1,0 +1,96 @@
+:root {
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+body {
+  color: black;
+  font-family: var(--font-montserrat);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+.container{
+  max-width: 1180px;
+  margin: auto;
+  @media (max-width: 1200px) {
+    padding: 0 20px;
+  }
+}
+.heading{
+  text-align: center;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin-bottom: 38px;
+  @media (max-width: 768px) {
+    font-size: 35px;
+    line-height: 1em;
+    margin-bottom: 30px;
+  }
+  @media (max-width: 490px) {
+    font-size: 25px;
+    line-height: 1.4em;
+    margin-bottom: 25px;
+  }
+}
+.heading.ls-1{
+  letter-spacing: -1.584px;
+}
+.button{
+  background: radial-gradient(40.8% 170.06% at 49.84% 50%, #FE5E54 10%, #6E1B20 200%);
+  color: #fff;
+  border: none;
+}
+
+.border-red{
+  background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 27px, transparent 27px) 0% 0%/30px 30px no-repeat,
+  radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 27px, transparent 27px) 100% 0%/30px 30px no-repeat,
+  radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 27px, transparent 27px) 0% 100%/30px 30px no-repeat,
+  radial-gradient(circle at 0 0, #ffffff 0, #ffffff 27px, transparent 27px) 100% 100%/30px 30px no-repeat,
+  linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 6px) calc(100% - 60px) no-repeat,
+  linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 60px) calc(100% - 6px) no-repeat,
+  radial-gradient(at 100% 100%, #fff 0%, transparent 70%),
+  radial-gradient(at 100% 100%, rgba(254,94,84,0.33) 0%, transparent 100%),
+  radial-gradient(at 0% 0%, #ffffff 0%, transparent 53%),
+  rgba(254,94,84,0.3);
+}
+.border-black{
+  background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 27px, transparent 27px) 0% 0%/30px 30px no-repeat,
+  radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 27px, transparent 27px) 100% 0%/30px 30px no-repeat,
+  radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 27px, transparent 27px) 0% 100%/30px 30px no-repeat,
+  radial-gradient(circle at 0 0, #ffffff 0, #ffffff 27px, transparent 27px) 100% 100%/30px 30px no-repeat,
+  linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 6px) calc(100% - 60px) no-repeat,
+  linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 60px) calc(100% - 6px) no-repeat,
+  radial-gradient(at 100% 100%, #ffffff 0%, transparent 70%),
+  radial-gradient(at 100% 0%, rgba(0,0,0,0.29) 0%, transparent 70%),
+  radial-gradient(at 0% 0%, #fff 0%, transparent 70%),
+  rgba(0,0,0,0.57);
+
+}
+.border-black-input{
+  background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 6px, transparent 6px) 0% 0%/8px 8px no-repeat,
+  radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 6px, transparent 6px) 100% 0%/8px 8px no-repeat,
+  radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 6px, transparent 6px) 0% 100%/8px 8px no-repeat,
+  radial-gradient(circle at 0 0, #ffffff 0, #ffffff 6px, transparent 6px) 100% 100%/8px 8px no-repeat,
+  linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 4px) calc(100% - 16px) no-repeat,
+  linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 4px) no-repeat,
+  linear-gradient(transparent 22%, rgba(0,0,0,0.53) 100%),
+  linear-gradient(0deg, transparent 33%, rgba(0,0,0,0.45) 100%);
+}

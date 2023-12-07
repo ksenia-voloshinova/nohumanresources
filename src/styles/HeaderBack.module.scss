@@ -1,0 +1,36 @@
+.header{
+  padding-top: 36px;
+  padding-left: 80px;
+  @media (max-width: 768px) {
+    padding-left: 30px;
+    padding-top: 20px;
+
+  }
+  .navButton {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 4px 18px 4px 4px;
+    @media (max-width: 768px) {
+      font-size: 12px;
+      gap: 5px;
+      padding: 4px 12px 4px 12px;
+    }
+    svg{
+      width: 39px;
+      height: 39px;
+      @media (max-width: 768px) {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+}
+

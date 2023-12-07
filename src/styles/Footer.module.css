@@ -1,0 +1,28 @@
+.footer{
+    color: #fff;
+    background: radial-gradient(411.78% 97.99% at 56.04% 59%, #CA473E 0%, #9A3231 100%);
+    padding-top: 55px;
+    padding-bottom: 90px;
+
+}
+.head{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.968px;
+    margin-bottom: 40px;
+    @media (max-width: 768px) {
+        font-size: 35px;
+        line-height: normal;
+        letter-spacing: -0.77px;
+    }
+    @media (max-width: 490px) {
+        font-size: 20px;
+        letter-spacing: -0.44px;
+    }
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

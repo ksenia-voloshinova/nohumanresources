@@ -1,0 +1,102 @@
+{
+  "titleHead": "Интеллектуальный имитатор активности",
+  "headerButtonLogin": "Войти",
+  "headerButtonRegister": "Зарегистрироваться",
+  "headerMenu": {
+    "linkMain": "Главная",
+    "linkRates": "Тарифные планы",
+    "linkArticles": "Статьи",
+    "linkFeedBack": "Обратная связь"
+  },
+
+  "CallToActionH1": "Интеллектуальный имитатор активности",
+  "CallToActionDescription": "В своём стремлении повысить качество жизни, они забывают, что курс на социально-ориентированный национальный проект прекрасно подходит для реализации позиций, занимаемых участниками в отношении поставленных задач. ",
+  "CallToActionButton": "Использовать",
+
+  "RatesSectionH1": "Тарифные планы",
+  "RatesSectionSubhead": "Выбери свой простой и легкий план",
+  "SwitchTextMonth": "Ежемесячное",
+  "SwitchTextYear": "Ежегодное",
+  "RateInfo1": {
+    "name": "Базовый",
+    "description": "Get unlimited services retainer",
+    "price": "$15/mo",
+    "listItems": {
+      "compositionOfTariff1": "Бизнес консультация",
+      "compositionOfTariff2": "Webflow Development",
+      "compositionOfTariff3": "One to One Training",
+      "compositionOfTariff4": "Phone and Live Support"
+    }
+  },
+  "RateInfo2": {
+    "name": "Про версия",
+    "description": "Get unlimited services retainer",
+    "price": "$25/mo",
+    "listItems": {
+      "compositionOfTariff1": "Бизнес консультация",
+      "compositionOfTariff2": "Webflow Development",
+      "compositionOfTariff3": "One to One Training",
+      "compositionOfTariff4": "Phone and Live Support"
+    }
+  },
+  "RateInfo3": {
+    "name": "Полный пакет",
+    "description": "Get unlimited services retainer",
+    "price": "$45/mo",
+    "listItems": {
+      "compositionOfTariff1": "Бизнес консультация",
+      "compositionOfTariff2": "Webflow Development",
+      "compositionOfTariff3": "One to One Training",
+      "compositionOfTariff4": "Phone and Live Support"
+    }
+  },
+  "RateInfo": {
+    "headList": "Состоит",
+    "buttonText": "Получить"
+  },
+
+  "ArticlesSectionHead": "Статьи",
+  "ArticleItem1": {
+    "heading": "Заголовок первой статьи",
+    "subheading": "An overview of Pulsar benefits",
+    "description": "Focus on what is more \nimportant to you and be \nmore productive",
+    "number": "97%"
+  },
+  "ArticleItem2": {
+    "heading": "Заголовок второй статьи",
+    "subheading": "2 статья",
+    "buttonText": "Подробнее"
+  },
+  "ArticleItem3": {
+    "heading": "Заголовок 3 статьи",
+    "subheading": "3 статья",
+    "buttonText": "Подробнее"
+
+  },
+  "ArticleItem4": {
+    "heading": "Заголовок 4 статьи",
+    "subheading": "4 статья",
+    "buttonText": "Подробнее"
+  },
+
+  "FeedBackSectionHead": "Обратная связь",
+  "FeedBackMethodsHeading": "Get in Touch \nwith Us!",
+  "FeedBackMethodsSubheading": "We are waiting for your message",
+  "FeedBackMethod1": {
+    "heading": "Address",
+    "content": "Riverside 25, North\nSan Fransisco, California"
+  },
+  "FeedBackMethod2": {
+    "heading": "Phone",
+    "content": "+993 62 46 62 33"
+  },
+  "FeedBackMethod3": {
+  "heading": "Email",
+  "content": "allaboutdesign.ru.com"
+},
+  "FeedBackInputPlaceholderHeading": "Заголовок",
+  "FeedBackInputPlaceholderMessage": "Сообщение",
+  "FeedBackButtonText": "Отправить",
+
+  "FooterSectionHead": "Обратная связь"
+}
