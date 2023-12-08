@@ -7,7 +7,12 @@ const Footer = ({t}) => {
         <footer className={styles.footer}>
             <div className={`container ${styles.flex}`}>
                 <h2 className={styles.head}>{t("FooterSectionHead")}</h2>
-                <ListContacts color="white"/>
+                <ListContacts color="white" head1={t("FeedBackMethod1.heading")}
+                              content1={t("FeedBackMethod1.content")}
+                              head2={t("FeedBackMethod2.heading")}
+                              content2={t("FeedBackMethod2.content")}
+                              head3={t("FeedBackMethod3.heading")}
+                              content3={t("FeedBackMethod3.content")}/>
             </div>
 
         </footer>

@@ -11,6 +11,12 @@ const Feedback = ({t}) => {
                         <h2 className={styles.communicMethodsHead}>{t("FeedBackMethodsHeading")}</h2>
                         <p className={styles.communicMethodsDescription}>{t("FeedBackMethodsSubheading")}</p>
                         <ListContacts  color="black"
+                                       head1={t("FeedBackMethod1.heading")}
+                                       content1={t("FeedBackMethod1.content")}
+                                       head2={t("FeedBackMethod2.heading")}
+                                       content2={t("FeedBackMethod2.content")}
+                                       head3={t("FeedBackMethod3.heading")}
+                                       content3={t("FeedBackMethod3.content")}
                          />
                     </div>
                     <form className={`${styles.form} border-black `} action="#">

@@ -1,18 +1,55 @@
 "use client"
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from "../styles/SwitchThemes.module.scss"
+import { useCookies,withCookies, Cookies } from "react-cookie"
+import {use} from "i18next";
 
 const SwitchThemes = () => {
-    const [value, setValue] = useState(false);
+    const [useDarkScheme, setUseDarkScheme] = useState(false);
+    const [cookie, setCookie] = useCookies(["darkTheme"])
 
     const handleToggle = () => {
-        setValue(!value);
-    };
-    return (
+        switchDarkScheme(!useDarkScheme);
 
+        setCookie(
+            "darkTheme",
+            JSON.stringify(!useDarkScheme),
+            {
+                path: "/",
+                maxAge: 3600 * 8, // Expires after 1hr
+                sameSite: true,
+            }
+        )
+
+        setUseDarkScheme(!useDarkScheme);
+    };
+
+    useEffect(() => {
+        let useDarkScheme = new Cookies().get('darkTheme')
+
+        if (useDarkScheme === undefined){
+            const useDarkScheme = window?.matchMedia?.('(prefers-color-scheme: dark)')?.matches ?? false;
+
+            setCookie(
+                "darkTheme",
+                JSON.stringify(useDarkScheme),
+                {
+                    path: "/",
+                    maxAge: 3600 * 8, // Expires after 1hr
+                    sameSite: true,
+                }
+            )
+        }
+
+        setUseDarkScheme(useDarkScheme);
+        switchDarkScheme(useDarkScheme);
+    }, []);
+
+
+    return (
         <div className={styles.wrapp__switch}>
             <input
-                checked={value}
+                checked={useDarkScheme}
                 onChange={handleToggle}
                 className={styles.switchCheckbox}
                 id={`react-switch-new-theme`}
@@ -46,4 +83,16 @@ const SwitchThemes = () => {
     );
 };
 
+function switchDarkScheme(useDarkScheme) {
+    const body = document.body
+
+    switch (useDarkScheme){
+        case true:
+            body.classList.add("dark")
+            break;
+        case false:
+            body.classList.remove("dark")
+            break;
+    }
+}
 export default SwitchThemes;

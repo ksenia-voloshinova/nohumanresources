@@ -4,10 +4,9 @@ import SwitchThemes from "../components/SwitchThemes";
 import Image from "next/image";
 import logoNav from "../static/logo-nav.svg"
 
-const Header = ({t}) => {
-
+const Header = ({t, darkTheme}) => {
     return (
-        <nav className={styles.nav}>
+        <nav className={`${styles.nav} ${darkTheme ? styles.dark : ""}`}>
             <div className="container">
                 <div className={styles.wrapp}>
                     <div> <Image className={styles.logo} src={logoNav}  loading="lazy" alt="picture"/></div>

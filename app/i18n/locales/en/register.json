@@ -1,0 +1,10 @@
+{
+  "back-to-home": "Вернуться",
+  "heading": "Зарегистрироваться",
+  "labelEmail": "Email",
+  "inputPlaceholderEmail": "Введите ваш Email",
+  "labelPassword": "Пароль",
+  "inputPlaceholderPassword": "Введите ваш пароль",
+  "forgotPassword": "Забыли пароль",
+  "buttonSubmitForm": "Зарегистрироваться"
+}
