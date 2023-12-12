@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from "../styles/Menu.module.css"
+import styles from "../styles/Menu.module.scss"
 import InputBurger from "./InputBurger";
+import SwitchThemes from "./SwitchThemes";
 
 const Menu = ({t}) => {
 
@@ -8,11 +9,14 @@ const Menu = ({t}) => {
     return (
         <div>
             <InputBurger/>
-            <ul className={styles.menu__box}>
-                <li><a className={styles.menu__item} href="#">{t('headerMenu.linkMain')}</a></li>
-                <li><a className={styles.menu__item} href="#">{t('headerMenu.linkRates')}</a></li>
-                <li><a className={styles.menu__item} href="#">{t('headerMenu.linkArticles')}</a></li>
-                <li><a className={styles.menu__item} href="#">{t('headerMenu.linkFeedBack')}</a></li>
+            <ul className={`whiteLink ${styles.menu__box}`}>
+                <li><a className={styles.menu__item} href="#callToAction">{t('headerMenu.linkMain')}</a></li>
+                <li><a className={styles.menu__item} href="#rates">{t('headerMenu.linkRates')}</a></li>
+                <li><a className={styles.menu__item} href="#articles">{t('headerMenu.linkArticles')}</a></li>
+                <li><a className={styles.menu__item} href="#feedback">{t('headerMenu.linkFeedBack')}</a></li>
+                <li><SwitchThemes/></li>
+
+
             </ul>
         </div>
     );

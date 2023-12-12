@@ -82,7 +82,7 @@
     padding-bottom: 20px;
     font-size: 18px;
     font-weight: 500;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid var(--color-text-main);
     width: 100%;
 }
 .rateListItem::before{
@@ -90,7 +90,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-color: black;
+    background-color: var(--color-text-main);
     border-radius: 20px;
     margin-right: 15px;
 }

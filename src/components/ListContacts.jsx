@@ -1,4 +1,4 @@
-import '../styles/ListContacts.css';
+import '../styles/ListContacts.scss';
 
 function ListContacts({color, head1, content1, head2, content2, head3, content3}) {
     return (

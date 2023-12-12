@@ -1,0 +1,27 @@
+{
+  "back-to-home": "Вернуться",
+  "subscriptionHead": "Подписка",
+  "active": "активна до",
+  "scoreHead": "На счету",
+  "buttonScore": "Пополнить",
+  "currency": "руб",
+  "devicesHead": "Устройства",
+  "buttonDevices": "выйти",
+  "downloadApp": "скачать ПО",
+  "changePassword": "Сменить пароль",
+
+  "oldPassword": "Старый пароль",
+  "oldPasswordInput": "Введите старый пароль",
+  "newPassword": "Новый пароль",
+  "newPasswordInput": "Введите новый пароль",
+  "newRepeatPassword": "Повторите новый пароль",
+  "newRepeatPasswordInput": "Повторите новый пароль",
+  "changePasswordButton": "Сохранить",
+  "changeEmail": "Email",
+  "emailSaveSuccess": "Подтвержден",
+  "emailSaveError": "Не подтвержден",
+  "changeEmailButton": "Сохранить",
+  "rateChangeHead": "Тариф",
+  "chosenRate": "базовый"
+}
+

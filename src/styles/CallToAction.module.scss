@@ -1,5 +1,6 @@
 .section{
-    padding-top:30px ;
+    padding-top:30px;
+    color: var(--color-text-main);
     .wrapp__content{
         display: flex;
         flex-direction: column;
@@ -66,6 +67,12 @@
         }
         img{
             max-width: 100%;
+        }
+        .imgWhite{
+            display:var(--display-block-black); ;
+        }
+        .imgBlack{
+            display: var(--display-block-white);;
         }
     }
 }

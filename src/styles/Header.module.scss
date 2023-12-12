@@ -1,4 +1,5 @@
 .nav{
+    color: var(--color-text-main) ;
     padding: 36px 0;
     @media (max-width: 1060px) {
         padding: 20px 55px 20px 0;
@@ -14,9 +15,16 @@
     justify-content: space-between;
 }
 .logo{
+    height: 47px;
     @media (max-width: 590px) {
         max-width: 120px;
     }
+}
+.imgBlack{
+    display: var(--display-block-white);
+}
+.imgWhite{
+    display: var(--display-block-black);
 }
 .buttons{
     display: flex;
@@ -52,18 +60,16 @@
         gap: 5px;
         padding: 4px 12px 4px 12px;
     }
-
-}
-.authButton svg{
-    width: 39px;
-    height: 39px;
-    @media (max-width: 768px) {
-        width: 22px;
-        height: 22px;
+    svg{
+        width: 39px;
+        height: 39px;
+        @media (max-width: 768px) {
+            width: 22px;
+            height: 22px;
+        }
+        path{
+            fill: var(--backround-color);
+        }
     }
-}
-.dark{
-    color: #6E1B20 !important;
-    background-color: black;
 
 }

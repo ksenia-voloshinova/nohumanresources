@@ -1,109 +1,200 @@
 :root {
-  --font-montserrat: 'Montserrat', sans-serif;
-}
-
-
-body.dark {
-  background-color: black;
-}
-
-.mainwrapper-dark{
-
-  background-color: black;
-}
-.mainwrapper{
-
+    --font-montserrat: 'Montserrat', sans-serif;
 }
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
+
 body {
-  color: black;
-  font-family: var(--font-montserrat);
-}
-a {
-  color: inherit;
-  text-decoration: none;
+    font-family: var(--font-montserrat);
 }
 
-li{
-  list-style: none;
-}
-.container{
-  max-width: 1180px;
-  margin: auto;
-  @media (max-width: 1200px) {
-    padding: 0 20px;
-  }
-}
-.heading{
-  text-align: center;
-  font-size: 72px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.1em;
-  margin-bottom: 38px;
-  @media (max-width: 768px) {
-    font-size: 35px;
-    line-height: 1em;
-    margin-bottom: 30px;
-  }
-  @media (max-width: 490px) {
-    font-size: 25px;
-    line-height: 1.4em;
-    margin-bottom: 25px;
-  }
-}
-.heading.ls-1{
-  letter-spacing: -1.584px;
-}
-.button{
-  background: radial-gradient(40.8% 170.06% at 49.84% 50%, #FE5E54 10%, #6E1B20 200%);
-  color: #fff;
-  border: none;
+.container {
+    max-width: 1180px;
+    margin: auto;
+    @media (max-width: 1200px) {
+        padding: 0 20px;
+    }
 }
 
-.border-red{
-  background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 27px, transparent 27px) 0% 0%/30px 30px no-repeat,
-  radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 27px, transparent 27px) 100% 0%/30px 30px no-repeat,
-  radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 27px, transparent 27px) 0% 100%/30px 30px no-repeat,
-  radial-gradient(circle at 0 0, #ffffff 0, #ffffff 27px, transparent 27px) 100% 100%/30px 30px no-repeat,
-  linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 6px) calc(100% - 60px) no-repeat,
-  linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 60px) calc(100% - 6px) no-repeat,
-  radial-gradient(at 100% 100%, #fff 0%, transparent 70%),
-  radial-gradient(at 100% 100%, rgba(254,94,84,0.33) 0%, transparent 100%),
-  radial-gradient(at 0% 0%, #ffffff 0%, transparent 53%),
-  rgba(254,94,84,0.3);
+.heading {
+    text-align: center;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin-bottom: 38px;
+    @media (max-width: 768px) {
+        font-size: 35px;
+        line-height: 1em;
+        margin-bottom: 30px;
+    }
+    @media (max-width: 490px) {
+        font-size: 25px;
+        line-height: 1.4em;
+        margin-bottom: 25px;
+    }
 }
-.border-black{
-  background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 27px, transparent 27px) 0% 0%/30px 30px no-repeat,
-  radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 27px, transparent 27px) 100% 0%/30px 30px no-repeat,
-  radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 27px, transparent 27px) 0% 100%/30px 30px no-repeat,
-  radial-gradient(circle at 0 0, #ffffff 0, #ffffff 27px, transparent 27px) 100% 100%/30px 30px no-repeat,
-  linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 6px) calc(100% - 60px) no-repeat,
-  linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 60px) calc(100% - 6px) no-repeat,
-  radial-gradient(at 100% 100%, #ffffff 0%, transparent 70%),
-  radial-gradient(at 100% 0%, rgba(0,0,0,0.29) 0%, transparent 70%),
-  radial-gradient(at 0% 0%, #fff 0%, transparent 70%),
-  rgba(0,0,0,0.57);
 
+.heading.ls-1 {
+    letter-spacing: -1.584px;
 }
-.border-black-input{
-  background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 6px, transparent 6px) 0% 0%/8px 8px no-repeat,
-  radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 6px, transparent 6px) 100% 0%/8px 8px no-repeat,
-  radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 6px, transparent 6px) 0% 100%/8px 8px no-repeat,
-  radial-gradient(circle at 0 0, #ffffff 0, #ffffff 6px, transparent 6px) 100% 100%/8px 8px no-repeat,
-  linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 4px) calc(100% - 16px) no-repeat,
-  linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 4px) no-repeat,
-  linear-gradient(transparent 22%, rgba(0,0,0,0.53) 100%),
-  linear-gradient(0deg, transparent 33%, rgba(0,0,0,0.45) 100%);
+
+label {
+    color: var(--color-text-auth);
+}
+
+
+.button {
+    background: radial-gradient(625.49% 159.66% at 49.84% 50%, #FE5E54 0%, #6E1B20 100%);
+    color: #fff;
+    border: none;
+    z-index: 10;
+    transition: all 0.4s;
+}
+
+.button:hover {
+    background: radial-gradient(625.49% 159.66% at 49.84% 50%, #FF493E 0%, #520C11 80.68%);
+}
+
+.mainwrapper {
+    --color-text-main: #000;
+    --color-text-auth: #292929;
+    --color-link-auth: #979797;
+    --fill-icon-uith: #000;
+    --backround-color: #fff;
+    --backround-color-menu: #FFF;
+    --display-block-white: block;
+    --display-block-black: none;
+
+    --outline-input-success: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 8px, transparent 8px) 0% 0%/10px 10px no-repeat, radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 8px, transparent 8px) 100% 0%/10px 10px no-repeat, radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 8px, transparent 8px) 0% 100%/10px 10px no-repeat, radial-gradient(circle at 0 0, #ffffff 0, #ffffff 8px, transparent 8px) 100% 100%/10px 10px no-repeat, linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 4px) calc(100% - 20px) no-repeat, linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 20px) calc(100% - 4px) no-repeat, radial-gradient(at 100% 100%, #FFF 10%, transparent 98%), radial-gradient(at 100% 0%, #14FF00 0%, transparent 70%), radial-gradient(at 0% 0%, #fff 20%, transparent 100%), #14ff00;
+    --articles-card-color: #FE5E54;
+    --articles-numder: linear-gradient(180deg, #000 54.69%, rgba(248, 254, 252, 0.00) 100%);
+
+    --contatc-icon-fill: #312F2F;
+}
+
+.mainwrapper .border-red {
+    background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 27px, transparent 27px) 0% 0%/30px 30px no-repeat,
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 27px, transparent 27px) 100% 0%/30px 30px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 27px, transparent 27px) 0% 100%/30px 30px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 27px, transparent 27px) 100% 100%/30px 30px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 6px) calc(100% - 60px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 60px) calc(100% - 6px) no-repeat,
+    radial-gradient(at 100% 100%, #fff 0%, transparent 70%),
+    radial-gradient(at 100% 100%, rgba(254, 94, 84, 0.33) 0%, transparent 100%),
+    radial-gradient(at 0% 0%, #ffffff 0%, transparent 53%),
+    rgba(254, 94, 84, 0.3)
+}
+
+.mainwrapper .border-black {
+    background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 27px, transparent 27px) 0% 0%/30px 30px no-repeat,
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 27px, transparent 27px) 100% 0%/30px 30px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 27px, transparent 27px) 0% 100%/30px 30px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 27px, transparent 27px) 100% 100%/30px 30px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 6px) calc(100% - 60px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 60px) calc(100% - 6px) no-repeat,
+    radial-gradient(at 100% 100%, #ffffff 0%, transparent 70%),
+    radial-gradient(at 100% 0%, rgba(0, 0, 0, 0.29) 0%, transparent 70%),
+    radial-gradient(at 0% 0%, #fff 0%, transparent 70%),
+    rgba(0, 0, 0, 0.57);
+}
+
+.mainwrapper .border-black-input {
+    background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 6px, transparent 6px) 0% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 6px, transparent 6px) 100% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 6px, transparent 6px) 0% 100%/8px 8px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 6px, transparent 6px) 100% 100%/8px 8px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 4px) calc(100% - 16px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 4px) no-repeat,
+    linear-gradient(transparent 22%, rgba(0, 0, 0, 0.53) 100%),
+    linear-gradient(0deg, transparent 33%, rgba(0, 0, 0, 0.45) 100%);
+}
+
+.mainwrapper.dark {
+    --color-text-main: #fff;
+    --color-text-auth: #fff;
+    --color-link-auth: #fff;
+    --fill-icon-uith: #fff;
+    --backround-color: #000;
+    --backround-color-menu: #0F0F0F;
+
+    background-color: #000;
+
+    --articles-card-color: #fff;
+    --articles-numder: linear-gradient(180deg, #FFF 54.69%, rgba(248, 254, 252, 0.00) 100%);
+
+
+    --display-block-white: none;
+    --display-block-black: block;
+
+    --contatc-icon-fill: #fff;
+    --outline-input-success: radial-gradient(circle at 100% 100%, #000000 0, #000000 8px, transparent 8px) 0% 0%/10px 10px no-repeat,
+    radial-gradient(circle at 0 100%, #000000 0, #000000 8px, transparent 8px) 100% 0%/10px 10px no-repeat,
+    radial-gradient(circle at 100% 0, #000000 0, #000000 8px, transparent 8px) 0% 100%/10px 10px no-repeat,
+    radial-gradient(circle at 0 0, #000000 0, #000000 8px, transparent 8px) 100% 100%/10px 10px no-repeat,
+    linear-gradient(#000000, #000000) 50% 50%/calc(100% - 4px) calc(100% - 20px) no-repeat,
+    linear-gradient(#000000, #000000) 50% 50%/calc(100% - 20px) calc(100% - 4px) no-repeat,
+    radial-gradient(at 100% 100%, #000 10%, transparent 98%),
+    radial-gradient(at 100% 0%, #14FF00 0%, transparent 70%),
+    radial-gradient(at 0% 0%, #000000 3%, transparent 100%),
+    #14ff00;
+    border-radius: 10px;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+.mainwrapper.dark .border-red {
+    background: radial-gradient(circle at 100% 100%, #000000 0, #000000 27px, transparent 27px) 0% 0%/30px 30px no-repeat,
+    radial-gradient(circle at 0 100%, #000000 0, #000000 27px, transparent 27px) 100% 0%/30px 30px no-repeat,
+    radial-gradient(circle at 100% 0, #000000 0, #000000 27px, transparent 27px) 0% 100%/30px 30px no-repeat,
+    radial-gradient(circle at 0 0, #000000 0, #000000 27px, transparent 27px) 100% 100%/30px 30px no-repeat,
+    linear-gradient(#000000, #000000) 50% 50%/calc(100% - 6px) calc(100% - 60px) no-repeat,
+    linear-gradient(#000000, #000000) 50% 50%/calc(100% - 60px) calc(100% - 6px) no-repeat,
+    radial-gradient(at 100% 100%, #000000 0%, transparent 100%),
+    radial-gradient(at 100% 0%, #fe5e54 0%, transparent 70%),
+    radial-gradient(at 0% 0%, #000000 0%, transparent 100%),
+    #fe5e54;
+}
+
+.mainwrapper.dark .border-black {
+    background: radial-gradient(circle at 100% 100%, #000000 0, #000000 27px, transparent 27px) 0% 0%/30px 30px no-repeat,
+    radial-gradient(circle at 0 100%, #000000 0, #000000 27px, transparent 27px) 100% 0%/30px 30px no-repeat,
+    radial-gradient(circle at 100% 0, #000000 0, #000000 27px, transparent 27px) 0% 100%/30px 30px no-repeat,
+    radial-gradient(circle at 0 0, #000000 0, #000000 27px, transparent 27px) 100% 100%/30px 30px no-repeat,
+    linear-gradient(#000000, #000000) 50% 50%/calc(100% - 6px) calc(100% - 60px) no-repeat,
+    linear-gradient(#000000, #000000) 50% 50%/calc(100% - 60px) calc(100% - 6px) no-repeat,
+    radial-gradient(at 100% 100%, #000000 0%, transparent 100%),
+    radial-gradient(at 164% 0%, #ffffff 0%, transparent 76%),
+    radial-gradient(at 0% 0%, #000000 0%, transparent 100%) 100% -21%,
+    #ffffff;;
+}
+
+.mainwrapper.dark .border-black-input {
+    background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 8px, transparent 8px) 0% 0%/10px 10px no-repeat,
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 8px, transparent 8px) 100% 0%/10px 10px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 8px, transparent 8px) 0% 100%/10px 10px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 8px, transparent 8px) 100% 100%/10px 10px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 4px) calc(100% - 20px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 20px) calc(100% - 4px) no-repeat,
+    conic-gradient(#ff0000 0%, #ffffff 22%, #ff0000 30%, #ff0000 64%, #ffffff 76%, #F00 100%);
+
 }

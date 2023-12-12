@@ -70,7 +70,7 @@
         margin: 0;
         padding: 80px 0;
         list-style: none;
-        background-color: #fff;
+        background-color: var(--backround-color-menu);
         box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
         transition-duration: .25s;
         z-index: 2;
@@ -81,7 +81,7 @@
     font-size: 17px;
     font-style: normal;
     font-weight: 500;
-    color: #000;
+    color: var(--color-text-main) ;
     text-align: right;
     @media (max-width: 1060px) {
         display: block;

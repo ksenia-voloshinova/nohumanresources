@@ -1,0 +1,54 @@
+.card{
+  margin-top: 40px;
+  padding: 25px;
+  border-radius: 30px;
+  .wrapp_head{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    h2{
+
+    }
+    button{
+      padding: 14px 20px;
+      border-radius: 5px;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+    }
+  }
+  .list_deposits{
+    padding-top: 25px;
+    .deposit{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+
+      border-bottom: 1px solid  var(--color-text-main);
+
+      .wrapp_data{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        .data_number{
+          font-size: 24px;
+        }
+        .data_time{
+          font-size: 18px;
+          color: #939394;
+        }
+      }
+      .description_deposit{
+        font-size: 24px;
+      }
+      .sum_deposit{
+        font-size: 30px;
+
+      }
+
+    }
+  }
+}

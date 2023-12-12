@@ -56,7 +56,7 @@ i.e.:
       var lng = lngDetector.detect()
       if (lng.indexOf('it') === 0) window.location.href = '/it/'
       else if (lng.indexOf('de') === 0) window.location.href = '/de/'
-      else window.location.href = '/en/'
+      else window.location.href = '/ru/'
     </script>
   </body>
 </html>

@@ -1,9 +1,9 @@
-import styles from "../styles/Feedback.module.css"
+import styles from "../styles/Feedback.module.scss"
 import ListContacts from "../components/ListContacts";
 const Feedback = ({t}) => {
 
     return (
-        <div className={styles.section__feedback}>
+        <div id="feedback" className={styles.section__feedback}>
             <div className="container">
                 <h1 className="heading">{t("FeedBackSectionHead")}</h1>
                 <div className={styles.grid}>

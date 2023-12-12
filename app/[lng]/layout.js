@@ -3,6 +3,7 @@ import './global.css'
 import { dir } from 'i18next'
 import { languages } from '../i18n/settings'
 import {Montserrat} from 'next/font/google'
+import WrappThemes from "../../src/components/WrappThemes";
 
 const montserrat = Montserrat({
     variable: '--font-montserrat',
@@ -23,7 +24,9 @@ export default function RootLayout({
     <html lang={lng} dir={dir(lng)}>
       <head />
       <body>
-        {children}
+      <WrappThemes>
+          {children}
+      </WrappThemes>
       </body>
     </html>
   )

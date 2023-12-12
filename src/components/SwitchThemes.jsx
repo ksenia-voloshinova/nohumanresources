@@ -1,8 +1,7 @@
 "use client"
 import React, {useEffect, useState} from 'react';
 import styles from "../styles/SwitchThemes.module.scss"
-import { useCookies,withCookies, Cookies } from "react-cookie"
-import {use} from "i18next";
+import { useCookies, Cookies } from "react-cookie"
 
 const SwitchThemes = () => {
     const [useDarkScheme, setUseDarkScheme] = useState(false);
@@ -84,14 +83,14 @@ const SwitchThemes = () => {
 };
 
 function switchDarkScheme(useDarkScheme) {
-    const body = document.body
+    const mainwrapper = document.body.querySelector(".mainwrapper")
 
     switch (useDarkScheme){
         case true:
-            body.classList.add("dark")
+            mainwrapper.classList.add("dark")
             break;
         case false:
-            body.classList.remove("dark")
+            mainwrapper.classList.remove("dark")
             break;
     }
 }

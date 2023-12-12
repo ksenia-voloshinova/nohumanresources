@@ -1,6 +1,6 @@
 "use client"
 import React, {useState} from 'react';
-import styles from "../styles/Menu.module.css";
+import styles from "../styles/Menu.module.scss";
 
 const InputBurger = (props) => {
     const [isChecked, setIsChecked] = useState(false);

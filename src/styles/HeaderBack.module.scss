@@ -1,4 +1,6 @@
 .header{
+  display: flex;
+  justify-content: start;
   padding-top: 36px;
   padding-left: 80px;
   @media (max-width: 768px) {
@@ -24,6 +26,9 @@
       padding: 4px 12px 4px 12px;
     }
     svg{
+      path{
+        fill: var(--backround-color);
+      }
       width: 39px;
       height: 39px;
       @media (max-width: 768px) {
