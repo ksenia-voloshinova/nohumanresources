@@ -10,8 +10,7 @@ export const config = {
   matcher: ['/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js).*)']
 }
 
-export const isUserAuthenticated = null;
-export async function middleware(req, res) {
+export async function middleware(req, res){
   const token = req.cookies.get('token')?.value ?? '';
   const tokenType = req.cookies.get('token_type')?.value ?? '';
 
@@ -22,19 +21,27 @@ export async function middleware(req, res) {
   if (!lng) lng = fallbackLng
 
   if (req.nextUrl.pathname.endsWith('/admin')) {
-    const authorized = await isAuthorized(token, tokenType);
-    if (authorized){
-      return NextResponse.next()
+    const response = NextResponse.next();
+    const authorized = await isAuthorized(token, tokenType, response);
+    if (authorized) {
+      return response
     }
     return NextResponse.redirect(new URL('auth', req.url))
   }
 
+
   if (req.nextUrl.pathname.endsWith('/auth')) {
-    const authorized = await isAuthorized(token, tokenType);
+    console.log('endsWith auth')
+
+    const response = NextResponse.rewrite(new URL(`${lng}/admin`, req.url));
+    const authorized = await isAuthorized(token, tokenType, req);
     if (authorized){
-      return NextResponse.rewrite(new URL(`${lng}/admin`, req.url))
+      console.log('authorized')
+
+      return response
     }
-    return NextResponse.rewrite(new URL(`${lng}/auth`, req.url))
+    console.log('!authorized')
+
   }
 
   if (

@@ -19,10 +19,12 @@
     "i18next-resources-to-backend": "1.2.0",
     "next": "^14.0.4",
     "next-auth": "^5.0.0-beta.4",
+    "nextjs-current-url": "^1.0.3",
     "react": "18.2.0",
     "react-cookie": "6.1.1",
     "react-dom": "18.2.0",
     "react-i18next": "13.5.0",
+    "react-router-dom": "^6.21.1",
     "sass": "^1.69.5"
   },
   "devDependencies": {

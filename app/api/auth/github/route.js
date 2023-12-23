@@ -9,12 +9,14 @@ export async function GET (req){
     const githubId = process.env.GITHUB_ID
     const githubSecret = process.env.GITHUB_SECRET
 
-    const tokenResponse = await fetch(`https://github.com/login/oauth/access_token?code=${code}&client_id=${githubId}&client_secret=${githubSecret}`,{
-        method: 'POST',
-        headers: {
-            'content-type': 'application/json'
+    const tokenResponse = await fetch(`https://github.com/login/oauth/access_token?code=${code}&client_id=${githubId}&client_secret=${githubSecret}`,
+      {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            }
         }
-    })
+    )
     let body = await tokenResponse.formData();
     let token = body.get('access_token');
 
