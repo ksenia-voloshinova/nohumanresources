@@ -7,50 +7,54 @@
         flex-direction: row;
         gap: 14px;
         width: 100%;
+
     }
-    .black{
-        .contact__head{
-            font-size: 16px;
-            font-weight: 700;
-            letter-spacing: -0.176px;
-            margin-bottom: 3px;
-        }
-        .contact__text{
-            font-size: 12px;
-            font-weight: 500;
-            letter-spacing: -0.012px;
-            color: #939394;
-        }
-        .contact__icon{
-            fill: var( --contatc-icon-fill);
-        }
+    .contact__head{
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.176px;
+        margin-bottom: 3px;
     }
-    .white{
-        .contact__head{
-            color: #FFF;
-            font-size: 25px;
-            font-weight: 700;
-            line-height: normal;
-            letter-spacing: -0.275px;
-            margin-bottom: 5px;
-            @media (max-width: 490px) {
-                font-size: 16px;
-                letter-spacing: -0.176px;
-            }
-        }
-        .contact__text{
-            color: #FFF;
-            font-size: 20px;
-            font-weight: 500;
-            line-height: normal;
-            letter-spacing: -0.02px;
-            @media (max-width: 490px) {
-                font-size: 12px;
-                letter-spacing: -0.012px;
-            }
-        }
-        .contact__icon{
-            fill: #FFF;
-        }
+    .contact__text{
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: -0.012px;
+        color: #939394;
+        max-width: 160px;
+    }
+}
+
+.contact__icon {
+    path {
+        fill: var(--contatc-icon-fill);
+    }
+}
+.white .contact__icon{
+    path {
+        fill: #FFF;
+    }
+}
+.white  .contact__head{
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.275px;
+    margin-bottom: 5px;
+    @media (max-width: 490px) {
+        font-size: 16px;
+        letter-spacing: -0.176px;
+    }
+}
+.white .contact__text{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.02px;
+    max-width: none;
+    @media (max-width: 490px) {
+        font-size: 12px;
+        letter-spacing: -0.012px;
     }
 }

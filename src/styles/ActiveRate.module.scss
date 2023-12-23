@@ -10,5 +10,8 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    @media (max-width: 600px) {
+      font-size: 20px;
+    }
   }
 }

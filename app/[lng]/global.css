@@ -25,13 +25,14 @@ body {
 
 body {
     font-family: var(--font-montserrat);
+    background-color: var(--backround-color);
 }
 
 .container {
     max-width: 1180px;
     margin: auto;
     @media (max-width: 1200px) {
-        padding: 0 20px;
+        padding: 0 15px;
     }
 }
 
@@ -42,7 +43,7 @@ body {
     font-weight: 700;
     line-height: 1.1em;
     margin-bottom: 38px;
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
         font-size: 35px;
         line-height: 1em;
         margin-bottom: 30px;
@@ -68,11 +69,18 @@ label {
     color: #fff;
     border: none;
     z-index: 10;
-    transition: all 0.4s;
+    transition: backround 0.4s;
 }
 
 .button:hover {
     background: radial-gradient(625.49% 159.66% at 49.84% 50%, #FF493E 0%, #520C11 80.68%);
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+
+    background: radial-gradient(959.33% 137.46% at 49.84% 50%, #bb6a66 0%, #e87c83 100%);
 }
 
 .mainwrapper {
@@ -157,9 +165,7 @@ label {
     radial-gradient(at 100% 0%, #14FF00 0%, transparent 70%),
     radial-gradient(at 0% 0%, #000000 3%, transparent 100%),
     #14ff00;
-    border-radius: 10px;
-    padding: 6px;
-    box-sizing: border-box;
+
 }
 
 .mainwrapper.dark .border-red {

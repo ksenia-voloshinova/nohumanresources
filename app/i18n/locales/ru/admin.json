@@ -10,6 +10,7 @@
   "downloadApp": "скачать ПО",
   "changePassword": "Сменить пароль",
 
+
   "oldPassword": "Старый пароль",
   "oldPasswordInput": "Введите старый пароль",
   "newPassword": "Новый пароль",
@@ -19,9 +20,15 @@
   "changePasswordButton": "Сохранить",
   "changeEmail": "Email",
   "emailSaveSuccess": "Подтвержден",
+  "openChangeEmail" : "Изменить",
   "emailSaveError": "Не подтвержден",
   "changeEmailButton": "Сохранить",
   "rateChangeHead": "Тариф",
-  "chosenRate": "базовый"
+  "chosenRate": "базовый",
+
+  "historyDeposits": "История Пополнений",
+  "depositButton": "Открыть",
+
+  "historyLogs": "Логи работы ПО"
 }
 

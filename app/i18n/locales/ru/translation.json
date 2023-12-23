@@ -98,5 +98,7 @@
   "FeedBackInputPlaceholderMessage": "Сообщение",
   "FeedBackButtonText": "Отправить",
 
-  "FooterSectionHead": "Обратная связь"
+  "FooterSectionHead": "Обратная связь",
+
+  "notFoundPage": "Страница не найдена"
 }
