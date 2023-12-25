@@ -18,7 +18,7 @@ const Articles = ({t}) => {
                             <p className={styles.number}>{t("ArticleItem1.number")}</p>
                             <p className={styles.description__bold}>{t("ArticleItem1.description")}</p>
                         </div>
-                        <Image className={styles.img} src={article_img1}  loading="lazy" alt="picture"/>
+                        <Image className={`${styles.img} ${styles.img_mob1}`} src={article_img1}  loading="lazy" alt="picture"/>
                     </Link>
                     <Link href="/article/2"className={`${styles.card_article} border-red `}>
                         <Image className={styles.img} src={article_img2}  loading="lazy" alt="picture"/>

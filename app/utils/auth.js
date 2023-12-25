@@ -13,14 +13,7 @@ export async function isAuthorized(token, tokenType) {
     })
 
     if (userResponse.status === 200) {
-      let user = await userResponse.json()
-      let email = user.email
-
-      if (email !== null && email !== ''){
-        cookies.set('email', email)
-        return true;
-      }
-      return false;
+      return true;
     }
   }
 
