@@ -24,7 +24,7 @@ const Articles = ({t}) => {
                         <Image className={styles.img} src={article_img2}  loading="lazy" alt="picture"/>
                         <p className={styles.description}>{t("ArticleItem2.subheading")}</p>
                         <h3>{t("ArticleItem2.heading")}</h3>
-                        <a href="#" className={`${styles.button__article} button`}>{t("ArticleItem2.buttonText")}</a>
+                        <button className={`${styles.button__article} button`}>{t("ArticleItem2.buttonText")}</button>
                     </Link>
                 </div>
                 <div className={styles.grid__articles}>
@@ -32,7 +32,7 @@ const Articles = ({t}) => {
                         <div className={styles.wrapp__content}>
                             <p className={styles.description}>{t("ArticleItem3.subheading")}</p>
                             <h3>{t("ArticleItem3.heading")}</h3>
-                            <a href="#" className={`${styles.button__article} button`}>{t("ArticleItem3.buttonText")}</a>
+                            <button className={`${styles.button__article} button`}>{t("ArticleItem3.buttonText")}</button>
                         </div>
                         <Image className={styles.img} src={article_img3}  loading="lazy" alt="picture"/>
                     </Link>
@@ -40,7 +40,7 @@ const Articles = ({t}) => {
                         <div className={styles.wrapp__content}>
                             <p className={styles.description}>{t("ArticleItem4.subheading")}</p>
                             <h3>{t("ArticleItem4.heading")}</h3>
-                            <a href="#" className={`${styles.button__article} button`}>{t("ArticleItem4.buttonText")}</a>
+                            <button className={`${styles.button__article} button`}>{t("ArticleItem4.buttonText")}</button>
                         </div>
                         <Image className={styles.img} src={article_img4}  loading="lazy" alt="picture"/>
 

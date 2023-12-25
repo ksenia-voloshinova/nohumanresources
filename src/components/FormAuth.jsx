@@ -1,8 +1,9 @@
 "use client"
 import React, {useState} from 'react';
 import styles from "../styles/FormAuth.module.scss";
-import InputPassword from "./InputPassword";
 import {changePassword, login, register} from "../../app/api/admin/adminApi";
+import { useCookies, Cookies } from "react-cookie"
+import {TokenTypes} from "../../app/utils/auth";
 
 const FormAuth = ({t, authBlock, formStyle, type}) =>  {
     const [formData, setFormData] = useState({
@@ -26,12 +27,26 @@ const FormAuth = ({t, authBlock, formStyle, type}) =>  {
         ){
             alert("form data incomplete")
         }
+        let res = null
+
         if (type === 'register') {
-            await register(formData.email, formData.password)
+            res = await register(formData.email, formData.password)
         }
         if (type === 'login') {
-            await login(formData.email, formData.password)
+            res = await login(formData.email, formData.password)
         }
+
+        if (res === null || res.status !== 200) {
+            alert("server error")
+            return;
+        }
+
+        let token = (await res.json()).token
+
+        let cookies = new Cookies();
+        cookies.set('token', token)
+        cookies.set('token_type', TokenTypes.REGISTER)
+        window.location.reload();
     }
 
     return (

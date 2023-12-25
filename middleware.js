@@ -22,26 +22,22 @@ export async function middleware(req, res){
 
   if (req.nextUrl.pathname.endsWith('/admin')) {
     const response = NextResponse.next();
-    const authorized = await isAuthorized(token, tokenType, response);
+    const authorized = await isAuthorized(token, tokenType);
+    if (authorized) {
+      return req.url.includes(lng)
+          ? response
+          : NextResponse.redirect(new URL(`${lng}/admin`, req.url))
+    }
+    return NextResponse.redirect(new URL('/auth', req.url))
+  }
+
+  if (req.nextUrl.pathname.endsWith('/auth') || req.nextUrl.pathname.endsWith('/register')) {
+    let redirectURL = req.url.includes(lng) ? '/admin' : `${lng}/admin`
+    const response = NextResponse.redirect(new URL(redirectURL, req.url));
+    const authorized = await isAuthorized(token, tokenType);
     if (authorized) {
       return response
     }
-    return NextResponse.redirect(new URL('auth', req.url))
-  }
-
-
-  if (req.nextUrl.pathname.endsWith('/auth')) {
-    console.log('endsWith auth')
-
-    const response = NextResponse.rewrite(new URL(`${lng}/admin`, req.url));
-    const authorized = await isAuthorized(token, tokenType, req);
-    if (authorized){
-      console.log('authorized')
-
-      return response
-    }
-    console.log('!authorized')
-
   }
 
   if (

@@ -1,4 +1,8 @@
-export async function isAuthorized(token, tokenType, response) {
+import {Cookies} from "react-cookie";
+
+export async function isAuthorized(token, tokenType) {
+  let cookies = new Cookies()
+
   if (tokenType === TokenTypes.GITHUB) {
     const userResponse = await fetch(`https://api.github.com/user`, {
       method: 'GET',
@@ -13,7 +17,7 @@ export async function isAuthorized(token, tokenType, response) {
       let email = user.email
 
       if (email !== null && email !== ''){
-        response.cookies.set('email', email)
+        cookies.set('email', email)
         return true;
       }
       return false;
@@ -34,15 +38,15 @@ export async function isAuthorized(token, tokenType, response) {
       let email = user.email
 
       if (email !== null && email !== ''){
-        response.cookies.set('email', email)
+        cookies.set('email', email)
         return true;
       }
       return false;
     }
   }
 
-  if (tokenType = TokenTypes.REGISTER){
-
+  if (tokenType === TokenTypes.REGISTER){
+    return true
   }
 
   return false

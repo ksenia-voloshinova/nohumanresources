@@ -27,31 +27,28 @@ export async function changePassword({NewPassword}) {
         .then(console.log);
 }
 
-export async function login({username, password}) {
-    if (process.env.ENV_TYPE === 'local'){
-        username = 'hbingley1';
-        password = 'CQutx25i8r'
-    }
-    const res = await fetch('https://dummyjson.com/auth/login', {
+export async function login(username, password) {
+    //delete when using prod api
+    username = 'hbingley1';
+    password = 'CQutx25i8r'
+
+    return await fetch('https://dummyjson.com/auth/login', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
             username: username,
             password: password
         })
     });
-
-    return await res.json();
 }
 
 
-export async function register({username, password}) {
-    if (process.env.ENV_TYPE === 'local'){
-        username = 'hbingley1';
-        password = 'CQutx25i8r'
-    }
+export async function register(username, password) {
+    //delete when using prod api
+    username = 'hbingley1';
+    password = 'CQutx25i8r'
 
-    const res = await fetch('https://dummyjson.com/auth/login', {
+    return await fetch('https://dummyjson.com/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -59,6 +56,4 @@ export async function register({username, password}) {
             password: password
         })
     });
-
-    return await res.json();
 }

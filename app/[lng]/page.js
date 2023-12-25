@@ -26,7 +26,6 @@ export default async function Page({params: {lng}}) {
                 <Feedback t={t}/>
             </main>
             <Footer t={t}/>
-
         </>
     )
 }

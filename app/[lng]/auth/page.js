@@ -42,15 +42,13 @@ const Page = async ({params: {lng}}) => {
             <main className={styles.mainAuth}>
                 <div className={styles.wrapp}>
                     <h2>{t("heading")}</h2>
-                    <form action="#" className={styles.login__form} method="POST">
-                        <FormAuth t={{
-                            labelEmail: t("labelEmail"),
-                            inputPlaceholderEmail: t("inputPlaceholderEmail"),
-                            labelPassword :t("labelPassword"),
-                            inputPlaceholderPassword: t("inputPlaceholderPassword"),
-                            forgotPassword: t("forgotPassword")
-                        }} authBlock={loginBlock} type={'login'}/>
-                    </form>
+                    <FormAuth t={{
+                        labelEmail: t("labelEmail"),
+                        inputPlaceholderEmail: t("inputPlaceholderEmail"),
+                        labelPassword :t("labelPassword"),
+                        inputPlaceholderPassword: t("inputPlaceholderPassword"),
+                        forgotPassword: t("forgotPassword")
+                    }} authBlock={loginBlock} type={'login'} formStyle={styles.login__form}/>
                 </div>
             </main>
         </>

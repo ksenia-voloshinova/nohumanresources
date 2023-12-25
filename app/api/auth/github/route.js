@@ -1,5 +1,6 @@
 import {NextResponse} from "next/server";
 import {TokenTypes} from "../../../utils/auth";
+import { cookies } from 'next/headers'
 
 export async function GET (req){
     const url = new URL(req.url)
@@ -22,7 +23,7 @@ export async function GET (req){
 
     const redirect = NextResponse.redirect(new URL(`/${locale}/admin`, req.url));
 
-    redirect.cookies.set('token', token)
-    redirect.cookies.set('token_type', TokenTypes.GITHUB)
+    cookies().set('token', token)
+    cookies().set('token_type', TokenTypes.GITHUB)
     return redirect
 }
