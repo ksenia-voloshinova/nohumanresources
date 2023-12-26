@@ -27,8 +27,7 @@
 .buttons{
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    @media (max-width: 610px) {
+    @media (max-width: 768px) {
         gap: 10px;
     }
 }

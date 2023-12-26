@@ -5,10 +5,7 @@ import {languages} from '../i18n/settings'
 import {Montserrat} from 'next/font/google'
 import WrappThemes from "../../src/components/WrappThemes";
 
-const montserrat = Montserrat({
-    variable: '--font-montserrat',
-    subsets: ['latin']
-})
+
 
 export async function generateStaticParams() {
     return languages.map((lng) => ({lng}))
