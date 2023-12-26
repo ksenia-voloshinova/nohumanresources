@@ -46,7 +46,7 @@ const FormAuth = ({t, authBlock, formStyle, type}) =>  {
         let cookies = new Cookies();
         cookies.set('token', token)
         cookies.set('token_type', TokenTypes.REGISTER)
-        window.location.reload();
+        window.location.href = 'admin'
     }
 
     return (

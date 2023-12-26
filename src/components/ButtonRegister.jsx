@@ -8,6 +8,5 @@ export default function ButtonRegister({styles, value}) {
                 <input className={`${styles} button`} type="submit" value={value}/>
             </div>
         </>
-    )
-        ;
+    );
 }
