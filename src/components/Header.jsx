@@ -1,11 +1,10 @@
 import styles from "../styles/Header.module.scss"
 import Menu from "../components/Menu";
-import SwitchThemes from "../components/SwitchThemes";
 import Image from "next/image";
 import logoNav from "../static/logo-nav.svg"
 import logoNavWhite from "../static/logo-nav-white.png"
 import Link from "next/link";
-import AuthButtons from "./AuthButtons";
+import AuthButtons from "../components/AuthButtons";
 
 const Header = ({t}) => {
 

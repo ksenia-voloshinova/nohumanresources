@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 96vh;
     color:var(--color-text-auth);
     h2{
         font-size: 40px;
@@ -15,6 +15,9 @@
     }
     .login__form{
         width: 708px;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
         .form__button{
             width: 100%;
             padding-top: 14px;

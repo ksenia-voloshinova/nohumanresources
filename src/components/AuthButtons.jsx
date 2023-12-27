@@ -6,23 +6,32 @@ import {Cookies} from "react-cookie";
 import {isAuthorized} from "../../app/utils/auth";
 
 function AuthButtons({info}) {
-    let cookies = new Cookies();
     const [auth, setAuth] = useState(false)
 
     useEffect( () => {
+        let cookies = new Cookies();
+
         const token = cookies.get('token')
         const tokenType = cookies.get('token_type')
-        const authorized = isAuthorized(token, tokenType);
-        authorized.then((value) => (
-            setAuth(value)            )
-        )
+        if (tokenType && token){
+            setAuth(true)
+            return;
+        }
+
+        setAuth(false)
+        // const authorized = isAuthorized(token, tokenType);
+        // authorized.then((value) => (
+        //     setAuth(value)
+        //     )
+        // )
 
     }, []);
 
     const removeCookies = () => {
-        cookies.remove("token", null)
-        cookies.remove("token_type", null)
-        setAuth(false)
+        new Cookies().remove("token", { path: '/' })
+        new Cookies().remove("token_type", { path: '/' })
+        new Cookies().remove("email", { path: '/' })
+        window.location.reload()
     }
 
     return (
