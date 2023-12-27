@@ -45,6 +45,14 @@
         padding: 7px 14px;
     }
 }
+.adminButton{
+    margin-left: 18px;
+
+    @media (max-width: 768px) {
+        margin-left: 0px;
+    }
+
+}
 .authButton{
 
     margin-left: 18px;

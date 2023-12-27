@@ -2,6 +2,8 @@
   "titleHead": "Интеллектуальный имитатор активности",
   "headerButtonLogin": "Войти",
   "headerButtonRegister": "Зарегистрироваться",
+  "headerButtonOut": "Выйти",
+  "headerButtonLK" : "Личный кабинет",
   "headerMenu": {
     "linkMain": "Главная",
     "linkRates": "Тарифные планы",

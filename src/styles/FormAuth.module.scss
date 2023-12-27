@@ -12,25 +12,10 @@
   .input{
     height: 56px;
     width: 100%;
-    //border: none;
     border-radius: 10px;
     padding: 14px 19px;
-    border: 10px solid transparent;
-    border-image:radial-gradient(at center top, #074F55, #C3D622);
-    //background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 6px, transparent 6px) 0% 0%/8px 8px no-repeat,
-    //radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 6px, transparent 6px) 100% 0%/8px 8px no-repeat,
-    //radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 6px, transparent 6px) 0% 100%/8px 8px no-repeat,
-    //radial-gradient(circle at 0 0, #ffffff 0, #ffffff 6px, transparent 6px) 100% 100%/8px 8px no-repeat,
-    //linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 4px) calc(100% - 16px) no-repeat,
-    //linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 4px) no-repeat,
-    //linear-gradient(transparent 22%, rgba(0, 0, 0, 0.53) 100%),
-    //linear-gradient(0deg, transparent 33%, rgba(0, 0, 0, 0.45) 100%);
-    /*
-* Created with https://www.css-gradient.com
-* Gradient link: https://www.css-gradient.com/?c1=074f55&c2=c3d622&gt=r&gd=dtt
-*/
-    //background: #074F55;
-    //border-image: radial-gradient(at center top, #074F55, #C3D622);
+    border: none;
+    outline: none;
   }
   .input::placeholder{
     color: #979797;
@@ -53,6 +38,14 @@
     }
     .email{
       width: 100%;
+      background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 8px, transparent 8px) 0% 0%/10px 10px no-repeat,
+      radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 8px, transparent 8px) 100% 0%/10px 10px no-repeat,
+      radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 8px, transparent 8px) 0% 100%/10px 10px no-repeat,
+      radial-gradient(circle at 0 0, #ffffff 0, #ffffff 8px, transparent 8px) 100% 100%/10px 10px no-repeat,
+      linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 4px) calc(100% - 20px) no-repeat,
+      linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 20px) calc(100% - 4px) no-repeat,
+      linear-gradient(86deg, #e2e2e2 5%, #0f0f0f 51%, #e2e2e2 100%);
+
     }
     .validity_icon{
       position: absolute;
@@ -87,15 +80,16 @@
       border: none;
     }
     .email:valid:placeholder-shown{
-      background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 6px, transparent 6px) 0% 0%/8px 8px no-repeat,
-      radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 6px, transparent 6px) 100% 0%/8px 8px no-repeat,
-      radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 6px, transparent 6px) 0% 100%/8px 8px no-repeat,
-      radial-gradient(circle at 0 0, #ffffff 0, #ffffff 6px, transparent 6px) 100% 100%/8px 8px no-repeat,
-      linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 4px) calc(100% - 16px) no-repeat,
-      linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 4px) no-repeat,
-      linear-gradient(transparent 22%, rgba(0, 0, 0, 0.53) 100%),
-      linear-gradient(0deg, transparent 33%, rgba(0, 0, 0, 0.45) 100%);
+      background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 8px, transparent 8px) 0% 0%/10px 10px no-repeat,
+      radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 8px, transparent 8px) 100% 0%/10px 10px no-repeat,
+      radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 8px, transparent 8px) 0% 100%/10px 10px no-repeat,
+      radial-gradient(circle at 0 0, #ffffff 0, #ffffff 8px, transparent 8px) 100% 100%/10px 10px no-repeat,
+      linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 4px) calc(100% - 20px) no-repeat,
+      linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 20px) calc(100% - 4px) no-repeat,
+      linear-gradient(86deg, #e2e2e2 5%, #0f0f0f 51%, #e2e2e2 100%);
+
     }
+
   }
 
   a{

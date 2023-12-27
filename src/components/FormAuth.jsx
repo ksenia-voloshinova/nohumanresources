@@ -54,7 +54,7 @@ const FormAuth = ({t, authBlock, formStyle, type}) =>  {
                 <div className={styles.wrap_input}>
                     <label className={styles.label} htmlFor="email">{t.labelEmail}</label>
                     <div className={styles.relative_input}>
-                        <input onChange={handleChange} className={`${styles.input} ${styles.email} border-black-input`} type="email" id="email"
+                        <input onChange={handleChange} className={`${styles.input} ${styles.email}`} type="email" id="email"
                                name="email"
                                placeholder={t.inputPlaceholderEmail}
                         />
