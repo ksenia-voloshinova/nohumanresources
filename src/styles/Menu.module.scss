@@ -4,6 +4,8 @@
         display: block;
         opacity: 0;
         width: 10px;
+        position: absolute;
+
     }
 }
 .menu__toggle:checked + .menu__btn > span {
@@ -31,6 +33,10 @@
         height: 25px;
         cursor: pointer;
         z-index: 21;
+    }
+    @media (max-width: 590px) {
+        top: 30px;
+        right: 14px;
     }
 
 }
